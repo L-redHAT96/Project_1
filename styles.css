@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #494848;
 }
 
 #main {
@@ -18,11 +18,19 @@ body {
 }
 
 #img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
     text-align: center;
 }
 
 #image {
     display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
@@ -33,9 +41,36 @@ body {
 }
 
 #tribute-info {
-    margin-top: 20px;
+    margin-top: 20px;    
+}
+h2{
+    text-align: center;
+}
+.tribute-profile {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    margin-bottom: 20px; /* Add margin for spacing */
 }
 
+.tribute {
+    display: inline-block; /* Display tribute as an inline-block element */
+    width: calc(70% - 20px); /* Set width to accommodate one tribute and account for margin */
+    margin-right: 20px; /* Add margin for spacing between tributes */
+    vertical-align: top; /* Align tributes to the top */
+}
+
+.tribute:last-child {
+    margin-right: 0; /* Remove margin from the last tribute */
+}
+
+.tribute img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+.tribute p {
+    white-space: normal; /* Allow wrapping within p tags */
+}
 #tribute-link {
     display: block;
     text-align: center;
